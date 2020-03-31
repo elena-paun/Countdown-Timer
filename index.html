@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,
+    shrink-to-fit=no"
+    />
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    /> -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <center>
+      <div id="containers" class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <label for="event">HOW MUCH TIME LEFT UNTIL...</label>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <input
+              type="text"
+              id="event"
+              placeholder="time after time after time time after time after time time after time after time after time"
+              size="20"
+            />
+          </div>
+        </div>
+        <br />
+
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <label for="dates">PICK A DATE</label>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <input type="date" id="dates" required />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <p id="or">OR</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <label for="locality-dropdown">PICK A BIRTHDAY</label><br />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <select id="locality-dropdown" name="locality"> </select>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+          <div class="col-md-12">
+            <button id="start">START</button>
+          </div>
+        </div>
+        <br />
+        <br />
+        <p id="timeLeftUntil"></p>
+        <p id="outputEvent"></p>
+
+        <div id="countdown">
+          <div class="row">
+            <div class="col-md-12">
+              <p id="clock"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p id="interval"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+    <!-- <script type="text/javascript" src="json/read.json"></script> -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

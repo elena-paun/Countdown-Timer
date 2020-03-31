@@ -1,0 +1,217 @@
+@font-face {
+  font-family: Montserrat-Hairline;
+  src: url(../fonts/Montserrat-Hairline.otf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+body {
+  /* background-color: rgb(32, 42, 87); */
+  background-image: url("../images/spacedoggy.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 23%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#container {
+  margin-top: 2vw;
+}
+
+#clock {
+  text-align: center;
+  color: white;
+  font-family: Montserrat-Bold;
+  line-height: 20px;
+  font-size: 3vw;
+  word-spacing: 6.5vw;
+  margin-top: 3vw;
+}
+
+#interval {
+  text-align: center;
+  color: white;
+  font-family: Montserrat-Hairline;
+  line-height: 5vw;
+  font-size: 1vw;
+  word-spacing: 6vw;
+}
+
+#countdown {
+  box-sizing: border-box;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 9vw;
+  margin-right: 9vw;
+  margin-top: 2vw;
+  max-width: 100%;
+  min-width: 10%;
+  max-height: 100%;
+  margin-bottom: 10vw;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat-Hairline;
+  background-image: url("../images/bulletpoint.png");
+  background-repeat: no-repeat;
+  font-size: 3vw;
+  background-position: 5;
+  background-size: 1vw;
+  width: 30%;
+  height: 10%;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  transition: 0.5s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0);
+}
+
+#or {
+  font-family: Montserrat-Bold;
+  color: rgb(255, 255, 255);
+}
+input[type="date"] {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat-Bold;
+  background-image: url("../images/bulletpoint.png");
+  margin-bottom: 2vw;
+  background-position: 5;
+  background-size: 1vw;
+  width: 30%;
+  height: 4%;
+  background-repeat: no-repeat;
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0);
+}
+
+input:focus {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-weight: bold;
+  transition-delay: 0.2s;
+}
+label {
+  color: white;
+  font-family: Montserrat-Bold;
+}
+
+button {
+  color: white;
+  font-family: Montserrat-Bold;
+  border: 4px solid #ffffff;
+
+  position: relative;
+  margin: 2rem 3rem;
+  padding: 1rem 2rem;
+  font-size: 1.15rem;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -0.6rem;
+  top: -0.5rem;
+  z-index: -1;
+  background-color: #f7567c;
+  transition: all 200ms ease-out;
+}
+button:hover::before {
+  top: 0;
+  left: 0;
+}
+button:active {
+  transform: translateY(3px);
+}
+@keyframes button {
+  0% {
+    transform: translate(0, 0) rotate(50deg) scale(1);
+  }
+  67% {
+    transform: translate(0.4rem, -1.8rem) rotate(160deg) scale(0.4);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale1;
+  }
+}
+#locality-dropdown {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  font-family: Montserrat-Bold;
+  background-image: url("../images/bulletpoint.png");
+  text-align: center;
+  padding-left: 25px;
+  background-position: 5;
+  background-size: 1vw;
+  width: 30%;
+  height: 4%;
+  margin-top: 1vw;
+  background-repeat: no-repeat;
+  font-family: Montserrat-Bold;
+  transition: 0.5s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0);
+}
+#locality-dropdown:focus {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: Montserrat-Bold;
+  background-image: url("../images/bulletpoint.png");
+  text-align: center;
+  background-position: 5;
+  background-size: 1vw;
+  width: 30%;
+  height: 4%;
+  margin-top: 1vw;
+  background-repeat: no-repeat;
+  font-family: Montserrat-Bold;
+  transition: 0.5s;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0);
+}
+select {
+  text-align: center;
+  font-family: Montserrat-Bold;
+  background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+select:focus {
+  background-image: linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size: 5px 5px, 5px 5px, 1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+#timeLeftUntil {
+  text-align: center;
+  color: #f7567c;
+  font-family: Montserrat-Bold;
+  line-height: 20px;
+  font-size: 1vw;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+  margin-top: 2vw;
+}
